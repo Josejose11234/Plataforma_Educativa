@@ -2,35 +2,28 @@
 {
     partial class FormRegistro
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.ComboBox comboBoxRol;
+        private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.Button btnVolver;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
-            {
                 components.Dispose();
-            }
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            lblUsuarioRegistro = new Label();
-            lblContraseñaRegistro = new Label();
-            lblRol = new Label();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
             txtUsuario = new TextBox();
             txtPassword = new TextBox();
             comboBoxRol = new ComboBox();
@@ -38,104 +31,90 @@
             btnVolver = new Button();
             SuspendLayout();
             // 
-            // lblUsuarioRegistro
+            // label1
             // 
-            lblUsuarioRegistro.AutoSize = true;
-            lblUsuarioRegistro.Location = new Point(48, 39);
-            lblUsuarioRegistro.Name = "lblUsuarioRegistro";
-            lblUsuarioRegistro.Size = new Size(50, 15);
-            lblUsuarioRegistro.TabIndex = 0;
-            lblUsuarioRegistro.Text = "Usuario:";
+            label1.AutoSize = true;
+            label1.Location = new Point(30, 30);
+            label1.Name = "label1";
+            label1.Size = new Size(50, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Usuario:";
             // 
-            // lblContraseñaRegistro
+            // label2
             // 
-            lblContraseñaRegistro.AutoSize = true;
-            lblContraseñaRegistro.Location = new Point(48, 99);
-            lblContraseñaRegistro.Name = "lblContraseñaRegistro";
-            lblContraseñaRegistro.Size = new Size(70, 15);
-            lblContraseñaRegistro.TabIndex = 1;
-            lblContraseñaRegistro.Text = "Contraseña:";
+            label2.AutoSize = true;
+            label2.Location = new Point(30, 70);
+            label2.Name = "label2";
+            label2.Size = new Size(70, 15);
+            label2.TabIndex = 1;
+            label2.Text = "Contraseña:";
             // 
-            // lblRol
+            // label3
             // 
-            lblRol.AutoSize = true;
-            lblRol.Location = new Point(48, 159);
-            lblRol.Name = "lblRol";
-            lblRol.Size = new Size(27, 15);
-            lblRol.TabIndex = 2;
-            lblRol.Text = "Rol:";
+            label3.AutoSize = true;
+            label3.Location = new Point(30, 110);
+            label3.Name = "label3";
+            label3.Size = new Size(27, 15);
+            label3.TabIndex = 2;
+            label3.Text = "Rol:";
             // 
             // txtUsuario
             // 
-            txtUsuario.Location = new Point(153, 39);
+            txtUsuario.Location = new Point(120, 27);
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(100, 23);
+            txtUsuario.Size = new Size(180, 23);
             txtUsuario.TabIndex = 3;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(153, 99);
+            txtPassword.Location = new Point(120, 67);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(100, 23);
+            txtPassword.PasswordChar = '*';
+            txtPassword.Size = new Size(180, 23);
             txtPassword.TabIndex = 4;
             // 
             // comboBoxRol
             // 
-            comboBoxRol.FormattingEnabled = true;
-            comboBoxRol.Items.AddRange(new object[] { "Jugador", "Administrador" });
-            comboBoxRol.Location = new Point(154, 159);
+            comboBoxRol.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxRol.Items.AddRange(new object[] { "jugador", "administrador" });
+            comboBoxRol.Location = new Point(120, 107);
             comboBoxRol.Name = "comboBoxRol";
-            comboBoxRol.Size = new Size(99, 23);
+            comboBoxRol.Size = new Size(180, 23);
             comboBoxRol.TabIndex = 5;
             // 
             // btnRegistrar
             // 
-            btnRegistrar.Location = new Point(48, 383);
+            btnRegistrar.Location = new Point(120, 150);
             btnRegistrar.Name = "btnRegistrar";
-            btnRegistrar.Size = new Size(87, 23);
+            btnRegistrar.Size = new Size(85, 30);
             btnRegistrar.TabIndex = 6;
-            btnRegistrar.Text = "Crear Cuenta";
-            btnRegistrar.UseVisualStyleBackColor = true;
+            btnRegistrar.Text = "Crear cuenta";
             btnRegistrar.Click += btnRegistrar_Click;
             // 
             // btnVolver
             // 
-            btnVolver.Location = new Point(170, 383);
+            btnVolver.Location = new Point(215, 150);
             btnVolver.Name = "btnVolver";
-            btnVolver.Size = new Size(94, 23);
+            btnVolver.Size = new Size(85, 30);
             btnVolver.TabIndex = 7;
-            btnVolver.Text = "Volver al Login";
-            btnVolver.UseVisualStyleBackColor = true;
+            btnVolver.Text = "Volver al login";
             btnVolver.Click += btnVolver_Click;
             // 
             // FormRegistro
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(btnVolver);
-            Controls.Add(btnRegistrar);
-            Controls.Add(comboBoxRol);
-            Controls.Add(txtPassword);
+            ClientSize = new Size(822, 452);
+            Controls.Add(label1);
+            Controls.Add(label2);
+            Controls.Add(label3);
             Controls.Add(txtUsuario);
-            Controls.Add(lblRol);
-            Controls.Add(lblContraseñaRegistro);
-            Controls.Add(lblUsuarioRegistro);
+            Controls.Add(txtPassword);
+            Controls.Add(comboBoxRol);
+            Controls.Add(btnRegistrar);
+            Controls.Add(btnVolver);
             Name = "FormRegistro";
-            Text = "FormRegistro";
+            Text = "Registro de usuario";
             ResumeLayout(false);
             PerformLayout();
         }
-
-        #endregion
-
-        private Label lblUsuarioRegistro;
-        private Label lblContraseñaRegistro;
-        private Label lblRol;
-        private TextBox txtUsuario;
-        private TextBox txtPassword;
-        private ComboBox comboBoxRol;
-        private Button btnRegistrar;
-        private Button btnVolver;
     }
 }

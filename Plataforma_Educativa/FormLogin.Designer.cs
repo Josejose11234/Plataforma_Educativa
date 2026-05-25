@@ -2,117 +2,95 @@
 {
     partial class FormLogin
     {
-        /// <summary>
-        ///  Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnRegistrar;
 
-        /// <summary>
-        ///  Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
-            {
                 components.Dispose();
-            }
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            lblUsuario = new Label();
-            lblContraseña = new Label();
+            label1 = new Label();
+            label2 = new Label();
             txtUsuario = new TextBox();
             txtPassword = new TextBox();
             btnLogin = new Button();
             btnRegistrar = new Button();
             SuspendLayout();
             // 
-            // lblUsuario
+            // label1
             // 
-            lblUsuario.AutoSize = true;
-            lblUsuario.Location = new Point(64, 52);
-            lblUsuario.Name = "lblUsuario";
-            lblUsuario.Size = new Size(50, 15);
-            lblUsuario.TabIndex = 0;
-            lblUsuario.Text = "Usuario:";
+            label1.AutoSize = true;
+            label1.Location = new Point(30, 30);
+            label1.Name = "label1";
+            label1.Size = new Size(50, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Usuario:";
             // 
-            // lblContraseña
+            // label2
             // 
-            lblContraseña.AutoSize = true;
-            lblContraseña.Location = new Point(64, 94);
-            lblContraseña.Name = "lblContraseña";
-            lblContraseña.Size = new Size(70, 15);
-            lblContraseña.TabIndex = 1;
-            lblContraseña.Text = "Contraseña:";
+            label2.AutoSize = true;
+            label2.Location = new Point(30, 70);
+            label2.Name = "label2";
+            label2.Size = new Size(70, 15);
+            label2.TabIndex = 1;
+            label2.Text = "Contraseña:";
             // 
             // txtUsuario
             // 
-            txtUsuario.Location = new Point(175, 52);
+            txtUsuario.Location = new Point(120, 27);
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(100, 23);
+            txtUsuario.Size = new Size(180, 23);
             txtUsuario.TabIndex = 2;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(175, 94);
+            txtPassword.Location = new Point(120, 67);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
-            txtPassword.Size = new Size(100, 23);
+            txtPassword.Size = new Size(180, 23);
             txtPassword.TabIndex = 3;
             // 
             // btnLogin
             // 
-            btnLogin.Location = new Point(64, 364);
+            btnLogin.Location = new Point(120, 110);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(87, 27);
+            btnLogin.Size = new Size(85, 30);
             btnLogin.TabIndex = 4;
-            btnLogin.Text = "Inisiar Sesión";
-            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Text = "Iniciar sesión";
             btnLogin.Click += btnLogin_Click;
             // 
             // btnRegistrar
             // 
-            btnRegistrar.Location = new Point(184, 364);
+            btnRegistrar.Location = new Point(215, 110);
             btnRegistrar.Name = "btnRegistrar";
-            btnRegistrar.Size = new Size(91, 27);
+            btnRegistrar.Size = new Size(85, 30);
             btnRegistrar.TabIndex = 5;
             btnRegistrar.Text = "Registrarse";
-            btnRegistrar.UseVisualStyleBackColor = true;
             btnRegistrar.Click += btnRegistrar_Click;
             // 
             // FormLogin
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(btnRegistrar);
-            Controls.Add(btnLogin);
-            Controls.Add(txtPassword);
+            ClientSize = new Size(881, 454);
+            Controls.Add(label1);
+            Controls.Add(label2);
             Controls.Add(txtUsuario);
-            Controls.Add(lblContraseña);
-            Controls.Add(lblUsuario);
+            Controls.Add(txtPassword);
+            Controls.Add(btnLogin);
+            Controls.Add(btnRegistrar);
             Name = "FormLogin";
-            Text = "Form1";
+            Text = "Inicio de sesión";
             ResumeLayout(false);
             PerformLayout();
         }
-
-        #endregion
-
-        private Label lblUsuario;
-        private Label lblContraseña;
-        private TextBox txtUsuario;
-        private TextBox txtPassword;
-        private Button btnLogin;
-        private Button btnRegistrar;
     }
 }
